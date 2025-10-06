@@ -1,0 +1,308 @@
+/*--- SELECTOR UNIVERSAL ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/*--- ESTILOS GENERALES ---*/
+body {
+    background-color: aliceblue;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/*--- ENCABEZADO ---*/
+header {
+    background-color: #003366;
+    color: white;
+    display: flex;              
+    justify-content: space-between;  
+    align-items: center;        
+    padding: 15px 40px;
+}
+header h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+
+/*--- MENÚ DE NAVEGACIÓN ---*/
+nav ul {
+    list-style: none;
+    display: flex;             
+    gap: 20px;                  
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*--- SECCIÓN PRINCIPAL ---*/
+#principal {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centra vertical */
+    align-items: center;      /* centra horizontal */
+    background-image: url("../images/banner_global.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#principal h2, #principal p {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    margin-bottom: 10px;
+}
+#principal a {
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+#principal a:hover {
+    background-color: #004d99;
+}
+
+
+/*--- PIE DE PÁGINA ---*/
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+}
+footer nav a {
+    color: white;
+    margin: 0 8px;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+
+/*--- SECCIÓN DE INFORMACIÓN ---*/
+#informacion {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+#informacion h2 {
+    margin-bottom: 25px;
+}
+#informacion article {
+    display: inline-block; /* hace que los recuadros se alineen en fila */
+    margin: 0 15px;
+    vertical-align: top; /* los alinea arriba */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    transition: transform 0.5s;
+}
+#informacion article:hover {
+    transform: translateY(-10px);  /* se eleva el recuadro */
+}
+#informacion img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+#informacion h3 {
+    margin: 10px 0;
+    color: #003366;
+}
+#informacion p {
+    padding: 0 15px 15px 15px;
+    font-size: 0.95em;
+}
+/*--- SECCIÓN DE VIDEO ---*/
+#video {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+#video h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#video iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*--- ESTILOS PARA LA PÁGINA DE IDIOMAS ---*/
+#idiomas {
+    text-align: center;
+    padding: 50px 20px;
+}
+#idiomas h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #003366;
+}
+#idiomas p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #333;
+    font-size: 1.2em;
+}
+/*--- Tarjetas de idioma ---*/
+#idiomas article {
+    display: inline-block;
+    width: 300px;
+    background-color: #f5f5f5;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    vertical-align: top;
+}
+/*--- Efecto al pasar el mouse ---*/
+#idiomas article:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+#idiomas img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+#idiomas h3 {
+    color: #004080;
+    margin: 10px 0;
+}
+#idiomas a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/*--- Efecto hover en botones de inscripción ---*/
+#idiomas a:hover {
+    background-color: #0066cc;
+    transition: 0.5s;
+}
+
+
+/*--- ESTILOS PARA LA PÁGINA DE INSCRIPCIÓN ---*/
+form {
+  width: 400px;            
+  margin: 50px auto;   /* centrado en la página */
+  padding: 20px;            
+  border: 1px solid #ccc;   
+  border-radius: 8px;       
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+/*--- Campos del formulario ---*/
+label {
+  display: block;  /* cada etiqueta en una línea aparte */
+  margin-top: 10px;         
+  color: #333;
+}
+input, textarea, select {
+  width: 100%;       /* que ocupe todo el ancho del formulario */
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  box-sizing: border-box;   /* el padding no aumenta el tamaño total */
+}
+/*--- Botón de enviar ---*/
+input[type="submit"] {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 0;
+  margin-top: 15px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+
+/* --- PÁGINA NOSOTROS --- */
+#nosotros {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+#nosotros h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+#nosotros p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1.1em;
+}
+/* Sección de misión y visión */
+#mision-vision {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: white;
+}
+#mision-vision article {
+  width: 300px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+#mision-vision h3 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+/* Sección de sucursales */
+#sucursales {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+#sucursales article {
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+#sucursales img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+#sucursales h3 {
+  color: #003366;
+  margin: 10px 0;
+}
+#sucursales p {
+  padding: 0 15px 15px 15px;
+  font-size: 1em;
+}
