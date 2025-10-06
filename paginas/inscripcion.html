@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Lingua | Inscripción</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Global Lingua</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="idiomas.html">Idiomas</a></li>
+        <li><a href="inscripcion.html">Inscripción</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="formulario">
+      <h2>Formulario de Inscripción</h2>
+      <p>Completa tus datos para unirte a Global Lingua.</p>
+
+      <form action="#" method="post" id="registro">
+        <div class="form-columnas">
+          <div class="columna">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+          </div>
+
+          <div class="columna">
+            <label for="idioma">Idioma de interés:</label>
+            <select id="idioma" name="idioma">
+              <option value="ingles">Inglés</option>
+              <option value="frances">Francés</option>
+              <option value="aleman">Alemán</option>
+            </select>
+
+            <label>Modalidad:</label>
+            <div class="radio-group">
+              <label><input type="radio" name="modalidad" value="presencial"> Presencial</label>
+              <label><input type="radio" name="modalidad" value="virtual"> Virtual</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <input type="submit" value="Enviar Inscripción">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p> &copy; 2025 Global Lingua | Contacto: info@globallingua.com</p>
+    <nav>
+      <a href="https://www.facebook.com" target="_blank">
+        <i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin-in"></i></a>
+    </nav>
+  </footer>
+</body>
+</html>
